@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - CameraShake
+  - Boss
+  - Ground
+  - AirWall
+  - SmartEnemy
+  - Dieline
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - Player
+  - Enemy
+  - Spike
+  - MovingPlantform
+  - Item
+  - TriggerBox
+  - boss
+  - SmartEnemy
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: BackGround
+    uniqueID: 4287768703
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 2850264171
+    locked: 0
+  - name: Item
+    uniqueID: 1941810141
+    locked: 0
+  - name: Enemy
+    uniqueID: 2559833349
+    locked: 0
+  - name: Player
+    uniqueID: 1628503461
+    locked: 0
+  - name: spirt
+    uniqueID: 2510332359
+    locked: 0
+  - name: bridge
+    uniqueID: 3083821387
+    locked: 0
