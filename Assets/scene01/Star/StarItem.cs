@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class StarItem : MonoBehaviour
 {
+    public GameObject presse;
+
     private bool IsPlayerInStar;
 
     private PlayerHealth PlayerHealth;
@@ -36,6 +38,7 @@ public class StarItem : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player") && other.GetType().ToString() == "UnityEngine.CapsuleCollider2D")//if hurt player and get the capsule
         {
+            presse.SetActive(true);
             IsPlayerInStar = true;
         } 
     }
@@ -44,6 +47,7 @@ public class StarItem : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player") && other.GetType().ToString() == "UnityEngine.CapsuleCollider2D")//if hurt player and get the capsule
         {
+            presse.SetActive(false);
             IsPlayerInStar = false;
         }            
     }

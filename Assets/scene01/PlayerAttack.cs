@@ -58,9 +58,5 @@ public class PlayerAttack : MonoBehaviour
         {
             other.GetComponent<FireCentipede>().BeHit(damage);
         }
-        if(other.gameObject.CompareTag("SmartEnemy"))
-        {
-
-        }
     }
 }

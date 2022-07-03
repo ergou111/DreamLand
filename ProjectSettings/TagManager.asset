@@ -27,7 +27,7 @@ TagManager:
   - TriggerBox
   - boss
   - SmartEnemy
-  - 
+  - DestructibleLayer
   - 
   - 
   - 
@@ -59,6 +59,9 @@ TagManager:
     locked: 0
   - name: Enemy
     uniqueID: 2559833349
+    locked: 0
+  - name: DestructibleLayer
+    uniqueID: 730666015
     locked: 0
   - name: Player
     uniqueID: 1628503461
