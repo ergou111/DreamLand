@@ -20,12 +20,12 @@ public class FireCentipede : MonoBehaviour
     Animator C_ani;
     public AudioSource HitAudio;
     public AudioSource AttackAudio;
-    public Animator EffectAni;//特效的播放
-    public GameObject Fireball;//火球的预制体
-    public GameObject FirePillar;//火柱的预制体
-    public GameObject Player;//获取到玩家的位置
-    public GameObject Pillar1;//平台一
-    public GameObject Pillar2;//平台二
+    public Animator EffectAni;//特效的播放 eefect
+    public GameObject Fireball;//火球的预制体 fireball
+    public GameObject FirePillar;//火柱的预制体 firepillar
+    public GameObject Player;//获取到玩家的位置 find player location
+    public GameObject Pillar1;//平台一 stand location 1
+    public GameObject Pillar2;//平台二 stand location 2
 
     Vector2 Initial;
 
@@ -122,7 +122,7 @@ public class FireCentipede : MonoBehaviour
         }
     }
 
-    public void FireBallAttack() //吐火球
+    public void FireBallAttack() //吐火球  spit fireball
     {
         C_ani.Play("Attack");
         FirePillarCd -= Time.deltaTime;
@@ -136,7 +136,7 @@ public class FireCentipede : MonoBehaviour
         }
     }
 
-    public void FireBallCreate() //生成火球(动画帧事件)
+    public void FireBallCreate() //生成火球(动画帧事件) generate fireball(animator)
     {
         if (C_tra.localScale.x == Initial.x)
         {
@@ -174,7 +174,7 @@ public class FireCentipede : MonoBehaviour
         }
     }
 
-    public void Dash()//冲撞 
+    public void Dash()//冲撞  collide
     {
         if (C_tra.localScale.x==Initial.x)
         {
@@ -188,7 +188,7 @@ public class FireCentipede : MonoBehaviour
         }
     }
 
-    public void FirePillarAttack() //火柱攻击
+    public void FirePillarAttack() //火柱攻击 firepillar hit
     {
         C_ani.Play("OtherAttack");
         Pillar1.GetComponent<Collider2D>().enabled = false;
@@ -209,7 +209,7 @@ public class FireCentipede : MonoBehaviour
         }
     }
 
-    public void CreateFirePillar() //生成火柱（动画帧事件）
+    public void CreateFirePillar() //生成火柱（动画帧事件） generate firepillar
     {
         for (int i = 0; i < 5; i++)
         {
@@ -304,7 +304,7 @@ public class FireCentipede : MonoBehaviour
         AttackAudio.Play();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision) // 碰撞玩家 collison player
     {
         if (collision.collider.CompareTag("AirWall"))
         {

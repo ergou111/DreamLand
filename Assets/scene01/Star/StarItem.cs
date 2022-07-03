@@ -23,6 +23,7 @@ public class StarItem : MonoBehaviour
             {
                 if(CoinUI.CurrentCoinQuantity > 0)
                 {
+                    SoundManager.PlayThrowCoinClip();
                     StarBinCoin.coinCurrent++;
                     CoinUI.CurrentCoinQuantity--;
                     PlayerHealth.AddHealth(1);

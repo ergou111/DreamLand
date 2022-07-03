@@ -38,6 +38,7 @@ public class PlayerHealth : MonoBehaviour
         {
             anim.SetTrigger("Die");
             Destroy(gameObject, 1f);
+            Restart();
         }
         BilnkPlayer(Bilnks, time);//if player hurt, than flicker;
     }
@@ -52,7 +53,7 @@ public class PlayerHealth : MonoBehaviour
         HealthBar.HealthCurrent = HealthThings.health;
     }
 
-    void BilnkPlayer(int numBlink, float seconds)
+    void BilnkPlayer(int numBlink, float seconds)// blink 闪烁
     {
         StartCoroutine(DoBlinks( numBlink, seconds));
     }

@@ -36,6 +36,7 @@ public abstract class Enemy : MonoBehaviour
 
     public void TakeDamage(int Damage)
     {
+        SoundManager.HitEnemyClip();
         health = health - Damage;
         FlashColor(flashtime);
         Instantiate(BloodEffect, transform.position, Quaternion.identity);

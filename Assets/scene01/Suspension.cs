@@ -54,6 +54,8 @@ public class Suspension : MonoBehaviour
     {
         GameIsPaused = false;
         Time.timeScale = 1.0f;
+        HealthThings.health=HealthThings.MaxHealth;
+        HealthBar.HealthCurrent = HealthThings.health;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 

@@ -196,7 +196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 2
   health: 3
-  flashtime: 1
+  flashtime: 0.2
   BloodEffect: {fileID: 227572172058210544, guid: b40bef0c6089d734bbafe0d09d8a4e5d, type: 3}
   dropCoin: {fileID: 2499043120508974609, guid: 34b3f2dd6eff9424496e79806930e308, type: 3}
   speed: 3
