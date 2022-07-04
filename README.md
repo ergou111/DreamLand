@@ -1,1 +1,12 @@
 # DreamLand
+Idea: I want to do the main line of this story is a brave dream of a little girl to a world called "dream land", save the villagers to break through the levels to defeat the boss, of course, dreamland also has another meaning, the fact that this is a beautiful dream of the little girl, the fact that the story is a little cheesy
+Gameplay: The game is a horizontal game, a total of three levels, the first level is the main purpose is to defeat the enemy and get hidden gold, the second level is the main purpose is to walk through the relatively rugged terrain and go to the final boss, to guide the player to continue forward, the last level needs to defeat the boss, the end can see the ending.
+Implementation: I interspersed some of the plot, are the monologue of the protagonist, which can advance the plot development and increase the interest; add monologue at the end to give the game a conclusion. The main character is set to run, jump, two jumps, attack, set up a few NPCs to the main character as a guide.
+At the end of each level I set the stars, by throwing coins to the stars (these coins are mainly from monster drops and direct display in the road) to get higher life value.
+For the map, I set up spikes, broken platforms, hidden spikes, wind system, movable platforms, etc., and increased the game's fun by increasing the difficulty of tilemap in the second level.
+In terms of monsters, there are three types of monsters: crows, bugs and wolves, each with a different way of moving, and players can drop gold coins for defeating them.
+Finally, the final boss, I set a total of three attacks to the final boss: impact, spit fireball, fire column, the boss will give priority to the impact, after the impact will begin to spit fireball, and if the boss in the state of half blood, he will begin to spit fireball after the spit fire column, when the player defeated the boss can come to the final endig
+The ending I use is their own video, about the little girl from the dream world back to reality, feel really a wonderful encounter, and then fight the spirit to return to reality of the plot.
+Props, I added two kinds of props: blood bottles and gold coins, gold coins can add blood at the end of the level stars, blood bottles can be used to directly increase the amount of blood five points.
+Ui, I set the player, boss blood bar, pause system (continue, back to the home page, exit, boss off to join the restart), gold coins ui, scene transition using a gradual transition.
+Thank you very much for reading through
